@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "iam-app",
+    "slug": "iam-app",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
