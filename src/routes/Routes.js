@@ -1,19 +1,19 @@
 import react from "react";
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import Home from './src/pages/HomeScreen/HomeScreen';
-import Login from './src/pages/LoginScreen/LoginScreen'
-import Sign from './src/pages/SignScreen/SignScreen'
-import Welcome from './src/pages/WelcomeScreen/WelcomeScreen'
+import Home from '../pages/HomeScreen'
+import Login from '../pages/LoginScreen'
+import Sign from '../pages/SignScreen'
+import Welcome from '../pages/WelcomeScreen'
 
 const Stack = createNativeStackNavigator();
 
-function Routes(){
+export default function Routes(){
     return(
-        <Stack.Navigator initialRouteName="Welcome">
-            <Stack.Screen name="Welcome" component={Welcome}/>
-            <Stack.Screen name="Login" component={Login}/>
-            <Stack.Screen name="Sign" component={Sign}/>
-            <Stack.Screen name="Home" component={Home}/>
+        <Stack.Navigator   initialRouteName="Welcome"  >
+            <Stack.Screen options={{headerShown: false,}} name="Welcome" component={Welcome}  />
+            <Stack.Screen options={{headerShown: false,}}name="Login" component={Login}/>
+            <Stack.Screen options={{headerShown: false,}} name="Sign" component={Sign}/>
+            <Stack.Screen options={{headerShown: false,}} name="Home" component={Home}/>
         </Stack.Navigator>
     )
 }
