@@ -1,11 +1,12 @@
 import react from "react";
-import { View, Text, Image, Button, TouchableOpacity,StyleSheet } from 'react-native';
+import { View, Text, Image, Button, TouchableOpacity } from 'react-native';
+import Styles from '../Styles/Styles'
 
 export default function Welcome({ navigation }) {
     return (
-        <View style={StyleSheet.create({flex:1,alignItems:'center',justifyContent:'center'})}>
+        <View style={Styles.container}>
             <Text>Welcome you app</Text>
-            <Button title="Login" onPress={() => navigation.navigate('Login')} style={StyleSheet.create({})}/>
+            <Button title="Login" onPress={() => navigation.navigate('Login')}/>
         
             <Button title="criar conta" onPress={() => navigation.navigate('Sign')} />
 
