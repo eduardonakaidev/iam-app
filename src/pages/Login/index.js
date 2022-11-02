@@ -1,7 +1,7 @@
 import react from "react";
 import {View,Text,Button,TextInput, TouchableOpacity } from 'react-native';
-import Styles from '../Styles/Styles'
-
+import Styles from '../../Styles/Styles'
+import StylesLocal from './StylesLocal'
 
 
 export default function LoginScreen({navigation}){
@@ -12,11 +12,13 @@ export default function LoginScreen({navigation}){
             <TextInput style={Styles.Inputs} placeholder="email" />
             <Text>senha</Text>
             <TextInput style={Styles.Inputs}  placeholder="senha..." />
-            <TouchableOpacity onPress={()=> navigation.navigate('Home')}> 
-                <Text>Login</Text>
+            <TouchableOpacity style={StylesLocal.LoginOpacity} onPress={()=> navigation.navigate('Home')}> 
+                <Text style={StylesLocal.LoginText}>Login</Text>
             </TouchableOpacity>
+            
             <TouchableOpacity  onPress={()=> navigation.navigate('Sign')}>
-                <Text>ainda não tem conta?</Text>
+                <Text style={StylesLocal.TextCriarConta}>ainda não tem conta? crie sua conta</Text>
+                
             </TouchableOpacity>
         </View>
     );

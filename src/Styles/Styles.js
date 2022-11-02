@@ -6,22 +6,15 @@ const Styles = StyleSheet.create({
         flex:1,
         justifyContent:'center',
         alignItems:'center',
-        backgroundColor:'#282a36',
-        
-
+        padding:20,
+        flexDirection:'column'
     },
     Inputs:{
         backgroundColor:'#f8f8f2',
-        width: 200,
-        paddingVertical:8 ,
-        
-        
-        
-
-
+        width:350,
+        height:45,
+        borderRadius:10,
     },
-
-
 });
 
 
