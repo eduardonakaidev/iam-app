@@ -6,6 +6,7 @@ import Login from '../pages/Login'
 import Sign from '../pages/Sign'
 import Welcome from '../pages/Welcome'
 
+
 const Stack = createNativeStackNavigator();
 
 export default function Routes() {
