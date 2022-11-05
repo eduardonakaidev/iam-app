@@ -1,5 +1,5 @@
 import React from 'react';
-import Routes from './src/routes/stackRoutes'
+import Routes from './src/routes/routes'
 
 
 
