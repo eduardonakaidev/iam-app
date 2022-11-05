@@ -16,7 +16,7 @@ export default function LoginScreen({navigation}){
                 <Text style={StylesLocal.LoginText}>Login</Text>
             </TouchableOpacity>
             
-            <TouchableOpacity  onPress={()=> navigation.navigate('Sign')}>
+            <TouchableOpacity  onPress={()=> navigation.navigate('Sign')}> 
                 <Text style={StylesLocal.TextCriarConta}>ainda não tem conta? crie sua conta</Text>
                 
             </TouchableOpacity>
