@@ -1,10 +1,12 @@
-import react from "react";
+import react, { useState } from "react";
 import {View,Text,Button,TextInput, TouchableOpacity } from 'react-native';
 import Styles from '../../Styles/Styles'
 import StylesLocal from './StylesLocal'
 
 
 export default function LoginScreen({navigation}){
+    const [] = useState("")
+    const []
     return(
         <View style={Styles.container}>
             
