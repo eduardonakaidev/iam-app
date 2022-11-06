@@ -10,7 +10,7 @@ const Tab = createBottomTabNavigator();
 export default function ShowBottomTabs() {
     return (
        
-            <Tab.Navigator>
+            <Tab.Navigator initialRouteName="Home">
                 <Tab.Screen name="Home" component={Home} />
                 <Tab.Screen name="Treino" component={Treino} />
                 <Tab.Screen name="Marketplace" component={Marketplace} />

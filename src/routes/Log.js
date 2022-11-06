@@ -8,16 +8,13 @@ import Welcome from '../pages/Welcome'
 
 
 const Stack = createNativeStackNavigator();
-
-
 export default function ShowLoginStack () {
     return (
       
-            <Stack.Navigator initialRouteName="Welcome"  >
+            <Stack.Navigator initialRouteName="Welcome" >
                 <Stack.Screen options={{ headerShown: true, }} name="Welcome" component={Welcome} />
                 <Stack.Screen options={{ headerShown: true, }} name="Login" component={Login} />
                 <Stack.Screen options={{ headerShown: true, }} name="Sign" component={Sign} />
-                
             </Stack.Navigator>
    
     )

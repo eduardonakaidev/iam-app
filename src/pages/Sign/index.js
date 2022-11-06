@@ -2,7 +2,7 @@ import react from "react";
 import {View,Text,Button, TextInput,TouchableOpacity} from 'react-native';
 import Styles from "../../Styles/Styles";
 import StylesLocal from './StylesLocal'
-
+import firebase from '../../config/firebase'
     
 
 
